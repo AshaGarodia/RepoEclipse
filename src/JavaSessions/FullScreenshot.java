@@ -95,5 +95,6 @@ public class FullScreenshot {
 		        }
 
 		        return fullImg;
-		    }
+		        
+    }
 		}

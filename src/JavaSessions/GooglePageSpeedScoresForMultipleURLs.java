@@ -14,7 +14,7 @@ public class GooglePageSpeedScoresForMultipleURLs {
 
 public static void main(String[] args) throws InterruptedException {
 // Set the path to ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\pc\\Downloads\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\pc\\Downloads\\chromedriver-win64 (3)\\chromedriver-win64\\chromedriver.exe");
       
      // Initialize ChromeDriver
 WebDriver driver = new ChromeDriver();
