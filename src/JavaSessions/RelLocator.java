@@ -15,7 +15,8 @@ import org.openqa.selenium.OutputType;
 
 import org.openqa.selenium.WebDriver;
 
-import org.openqa.selenium.WebDriver.TargetLocator;
+import org.openqa.selenium.WebDriver.*;
+//TargetLocator;
 
 import org.openqa.selenium.WebElement;
 
@@ -47,7 +48,7 @@ Thread.sleep(3000);
 
 		//Switching Window
 		
-			driver.switchTo().newWindow(WindowType.WINDOW);
+		WebDriver newWindow = driver.switchTo().newWindow(WindowType.WINDOW);
 
 				Set<String> handles=driver.getWindowHandles();
 
@@ -59,7 +60,7 @@ Thread.sleep(3000);
 
 				driver.switchTo().window(childWindow);
 
-				driver.get("https://rahulshettyacademy.com/");
+				newWindow.get("https://rahulshettyacademy.com/");
 
 				String courseName = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']"))
 

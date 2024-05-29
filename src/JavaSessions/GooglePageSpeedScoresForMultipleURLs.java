@@ -32,7 +32,7 @@ driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
        
         try {
             // Load the Excel file
-            FileInputStream fis = new FileInputStream(".\\DataFiles\\Funambulist_Scores.xlsx");
+            FileInputStream fis = new FileInputStream(".\\DataFiles\\CEISS_Hope_Scores_29thMay.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(fis);
             XSSFSheet sheet = workbook.getSheetAt(0);
 
@@ -204,7 +204,7 @@ driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
             // Write the updated workbook back to the Excel file
             
-            FileOutputStream outputStream = new FileOutputStream(".\\DataFiles\\Funambulist_Scores.xlsx");
+            FileOutputStream outputStream = new FileOutputStream(".\\DataFiles\\CEISS_Hope_Scores_29thMay.xlsx");
             workbook.write(outputStream);
             workbook.close();
             outputStream.close();
